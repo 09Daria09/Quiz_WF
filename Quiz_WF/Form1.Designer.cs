@@ -196,7 +196,6 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(77, 24);
             this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Tag = "2";
             this.radioButton5.Text = "Пчелы";
             this.radioButton5.UseVisualStyleBackColor = true;
@@ -211,7 +210,6 @@
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(94, 24);
             this.radioButton6.TabIndex = 2;
-            this.radioButton6.TabStop = true;
             this.radioButton6.Tag = "2";
             this.radioButton6.Text = "Муравьи";
             this.radioButton6.UseVisualStyleBackColor = true;
@@ -226,7 +224,6 @@
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(91, 24);
             this.radioButton7.TabIndex = 1;
-            this.radioButton7.TabStop = true;
             this.radioButton7.Tag = "2";
             this.radioButton7.Text = "Бабочки";
             this.radioButton7.UseVisualStyleBackColor = true;
@@ -241,7 +238,6 @@
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(69, 24);
             this.radioButton8.TabIndex = 0;
-            this.radioButton8.TabStop = true;
             this.radioButton8.Tag = "2";
             this.radioButton8.Text = "Мухи";
             this.radioButton8.UseVisualStyleBackColor = true;
@@ -272,7 +268,6 @@
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(110, 24);
             this.radioButton9.TabIndex = 3;
-            this.radioButton9.TabStop = true;
             this.radioButton9.Tag = "3";
             this.radioButton9.Text = "Миссисипи";
             this.radioButton9.UseVisualStyleBackColor = true;
@@ -287,7 +282,6 @@
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(75, 24);
             this.radioButton10.TabIndex = 2;
-            this.radioButton10.TabStop = true;
             this.radioButton10.Tag = "3";
             this.radioButton10.Text = "Янцзы";
             this.radioButton10.UseVisualStyleBackColor = true;
@@ -302,7 +296,6 @@
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(100, 24);
             this.radioButton11.TabIndex = 1;
-            this.radioButton11.TabStop = true;
             this.radioButton11.Tag = "3";
             this.radioButton11.Text = "Амазонка";
             this.radioButton11.UseVisualStyleBackColor = true;
@@ -317,7 +310,6 @@
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(58, 24);
             this.radioButton12.TabIndex = 0;
-            this.radioButton12.TabStop = true;
             this.radioButton12.Tag = "3";
             this.radioButton12.Text = "Нил";
             this.radioButton12.UseVisualStyleBackColor = true;
@@ -349,6 +341,7 @@
             this.checkBox4.TabIndex = 7;
             this.checkBox4.Text = "Fortran";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -360,6 +353,7 @@
             this.checkBox3.TabIndex = 6;
             this.checkBox3.Text = "Pascal";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -447,6 +441,7 @@
             this.checkBox5.TabIndex = 4;
             this.checkBox5.Text = "Марс";
             this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // groupBox6
             // 
@@ -545,7 +540,6 @@
             this.radioButton25.Name = "radioButton25";
             this.radioButton25.Size = new System.Drawing.Size(88, 24);
             this.radioButton25.TabIndex = 3;
-            this.radioButton25.TabStop = true;
             this.radioButton25.Tag = "6";
             this.radioButton25.Text = "Венгрия";
             this.radioButton25.UseVisualStyleBackColor = true;
@@ -560,7 +554,6 @@
             this.radioButton26.Name = "radioButton26";
             this.radioButton26.Size = new System.Drawing.Size(111, 24);
             this.radioButton26.TabIndex = 2;
-            this.radioButton26.TabStop = true;
             this.radioButton26.Tag = "6";
             this.radioButton26.Text = "Финляндия";
             this.radioButton26.UseVisualStyleBackColor = true;
@@ -575,7 +568,6 @@
             this.radioButton27.Name = "radioButton27";
             this.radioButton27.Size = new System.Drawing.Size(91, 24);
             this.radioButton27.TabIndex = 1;
-            this.radioButton27.TabStop = true;
             this.radioButton27.Tag = "6";
             this.radioButton27.Text = "Израиль";
             this.radioButton27.UseVisualStyleBackColor = true;
@@ -590,7 +582,6 @@
             this.radioButton28.Name = "radioButton28";
             this.radioButton28.Size = new System.Drawing.Size(209, 24);
             this.radioButton28.TabIndex = 0;
-            this.radioButton28.TabStop = true;
             this.radioButton28.Tag = "6";
             this.radioButton28.Text = "Все вышеперечисленные";
             this.radioButton28.UseVisualStyleBackColor = true;
@@ -621,7 +612,6 @@
             this.radioButton29.Name = "radioButton29";
             this.radioButton29.Size = new System.Drawing.Size(59, 24);
             this.radioButton29.TabIndex = 3;
-            this.radioButton29.TabStop = true;
             this.radioButton29.Tag = "5";
             this.radioButton29.Text = "95%";
             this.radioButton29.UseVisualStyleBackColor = true;
@@ -636,7 +626,6 @@
             this.radioButton30.Name = "radioButton30";
             this.radioButton30.Size = new System.Drawing.Size(59, 24);
             this.radioButton30.TabIndex = 2;
-            this.radioButton30.TabStop = true;
             this.radioButton30.Tag = "5";
             this.radioButton30.Text = "90%";
             this.radioButton30.UseVisualStyleBackColor = true;
@@ -651,7 +640,6 @@
             this.radioButton31.Name = "radioButton31";
             this.radioButton31.Size = new System.Drawing.Size(59, 24);
             this.radioButton31.TabIndex = 1;
-            this.radioButton31.TabStop = true;
             this.radioButton31.Tag = "5";
             this.radioButton31.Text = "75%";
             this.radioButton31.UseVisualStyleBackColor = true;
@@ -666,7 +654,6 @@
             this.radioButton32.Name = "radioButton32";
             this.radioButton32.Size = new System.Drawing.Size(59, 24);
             this.radioButton32.TabIndex = 0;
-            this.radioButton32.TabStop = true;
             this.radioButton32.Tag = "5";
             this.radioButton32.Text = "50%";
             this.radioButton32.UseVisualStyleBackColor = true;
@@ -680,7 +667,6 @@
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(107, 24);
             this.radioButton13.TabIndex = 12;
-            this.radioButton13.TabStop = true;
             this.radioButton13.Tag = "9";
             this.radioButton13.Text = "Канделябр";
             this.radioButton13.UseVisualStyleBackColor = true;
@@ -694,7 +680,6 @@
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Size = new System.Drawing.Size(117, 24);
             this.radioButton14.TabIndex = 13;
-            this.radioButton14.TabStop = true;
             this.radioButton14.Tag = "9";
             this.radioButton14.Text = "Подсвечник";
             this.radioButton14.UseVisualStyleBackColor = true;
@@ -708,7 +693,6 @@
             this.radioButton15.Name = "radioButton15";
             this.radioButton15.Size = new System.Drawing.Size(96, 24);
             this.radioButton15.TabIndex = 14;
-            this.radioButton15.TabStop = true;
             this.radioButton15.Tag = "9";
             this.radioButton15.Text = "Статуэтка";
             this.radioButton15.UseVisualStyleBackColor = true;
@@ -722,7 +706,6 @@
             this.radioButton16.Name = "radioButton16";
             this.radioButton16.Size = new System.Drawing.Size(56, 24);
             this.radioButton16.TabIndex = 15;
-            this.radioButton16.TabStop = true;
             this.radioButton16.Tag = "9";
             this.radioButton16.Text = "Бра";
             this.radioButton16.UseVisualStyleBackColor = true;
@@ -797,7 +780,6 @@
             this.radioButton20.Name = "radioButton20";
             this.radioButton20.Size = new System.Drawing.Size(103, 24);
             this.radioButton20.TabIndex = 22;
-            this.radioButton20.TabStop = true;
             this.radioButton20.Tag = "10";
             this.radioButton20.Text = "Селезенка";
             this.radioButton20.UseVisualStyleBackColor = true;
@@ -810,7 +792,6 @@
             this.radioButton19.Name = "radioButton19";
             this.radioButton19.Size = new System.Drawing.Size(137, 24);
             this.radioButton19.TabIndex = 21;
-            this.radioButton19.TabStop = true;
             this.radioButton19.Tag = "10";
             this.radioButton19.Text = "Роговица глаза";
             this.radioButton19.UseVisualStyleBackColor = true;
@@ -823,7 +804,6 @@
             this.radioButton18.Name = "radioButton18";
             this.radioButton18.Size = new System.Drawing.Size(201, 24);
             this.radioButton18.TabIndex = 20;
-            this.radioButton18.TabStop = true;
             this.radioButton18.Tag = "10";
             this.radioButton18.Text = "Поджелудочная железа";
             this.radioButton18.UseVisualStyleBackColor = true;
@@ -836,7 +816,6 @@
             this.radioButton17.Name = "radioButton17";
             this.radioButton17.Size = new System.Drawing.Size(83, 24);
             this.radioButton17.TabIndex = 19;
-            this.radioButton17.TabStop = true;
             this.radioButton17.Tag = "10";
             this.radioButton17.Text = "Печень";
             this.radioButton17.UseVisualStyleBackColor = true;

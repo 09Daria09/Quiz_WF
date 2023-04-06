@@ -28,13 +28,13 @@ namespace Quiz_WF
             radioButton20.ForeColor = radioButton2.BackColor;
 
             progressBar1.Value = 0;
-            radioButton33.Checked = true;
+            // radioButton33.Checked = true;
             foreach (RadioButton radioButton in this.Controls.OfType<RadioButton>())
             {
                 radioButton.Enabled = false;
                 radioButton.TabStop = false;
             }
-            button1.Focus();
+            radioButton33.Select();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -88,67 +88,67 @@ namespace Quiz_WF
             if (radioButton != null && radioButton.Checked)
             {
                 int tagValue = Convert.ToInt32(radioButton.Tag);
-                //GroupBox groupBox = null;
 
                 if (tagValue == 1)
                 {
                     groupBox1.Enabled = false;
-                    button1.Focus();
                     return;
                 }
                 else if (tagValue == 2)
                 {
                     groupBox2.Enabled = false;
-                    button1.Focus();
                     return;
                 }
                 else if (tagValue == 3)
                 {
                     groupBox3.Enabled = false;
-                    button1.Focus();
                     return;
                 }
                 else if (tagValue == 5)
                 {
                     groupBox8.Enabled = false;
-                    button1.Focus();
                     return;
                 }
                 else if (tagValue == 6)
                 {
                     groupBox7.Enabled = false;
-                    button1.Focus();
                     return;
                 }
                 else if (tagValue == 7)
                 {
                     groupBox6.Enabled = false;
-                    button1.Focus();
                     return;
                 }
                 else if (tagValue == 9)
                 {
                     groupBox9.Enabled = false;
-                    button1.Focus();
                     return;
                 }
                 else if (tagValue == 10)
                 {
                     groupBox10.Enabled = false;
-                    button1.Focus();
                     return;
                 }
-
-                //if (tagValue == 1 && (radioButton3.Checked || radioButton6.Checked || radioButton12.Checked || radioButton30.Checked || radioButton28.Checked || radioButton24.Checked || radioButton13.Checked || radioButton19.Checked))
-                //{
-                //    progressBar1.Value += 10;
-                //}
+                radioButton33.Select();
             }
+                
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            CheckBox checkBox = sender as CheckBox;
+            checkBox.Enabled = false;
+
+            if ((checkBox1.Checked && checkBox2.Checked && !checkBox3.Checked && !checkBox4.Checked)||(checkBox6.Checked && checkBox7.Checked && checkBox8.Checked && !checkBox5.Checked))
             progressBar1.Value += 10;
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox checkBox = sender as CheckBox;
+            checkBox.Enabled = false;
+            if(progressBar1.Value != 0)
+            progressBar1.Value -= 10;
         }
     }
 }
